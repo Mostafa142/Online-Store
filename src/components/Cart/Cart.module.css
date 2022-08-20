@@ -1,0 +1,239 @@
+.container {
+  padding: 80px 80px;
+}
+.empty{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.container .main-heading {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #1d1f22;
+  margin-bottom: 55px;
+}
+.container .item-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 48px;
+}
+.container .item-container::before {
+  position: absolute;
+  top: -24px;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+}
+.container .item-container::after {
+  position: absolute;
+  bottom: -24px;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.container .item-container .item-description {
+  width: 292px;
+}
+
+.container .item-container .item-description .item-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+  margin-bottom: 20px;
+}
+.container .item-container .item-description .item-title .brand {
+  margin-bottom: 16px;
+}
+.container .item-container .item-description .item-title .type {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.container .item-container .item-description .item-title .price {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.container .item-container .item-heading {
+  width: 55px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d1f22;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.container .item-container .size-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container .item-container .size-container .btn-default {
+  border: 1px solid #1d1f22;
+  width: 63px;
+  height: 45px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d1f22;
+  background-color: #fff;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.container .item-description .size .size-container .btn-default:hover {
+  background: #1d1f22;
+  color: #fff;
+}
+.container .item-description .size .size-container .btn-default-active {
+  border: 1px solid #1d1f22;
+  width: 63px;
+  height: 45px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #1d1f22;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.container .item-description .color .colors-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .item-description .color .colors-container .btn-color {
+  width: 32px;
+  height: 32px;
+  background: #d3d2d5;
+  margin-right: 8px;
+  cursor: pointer;
+  border: none;
+}
+.container .item-description .color .colors-container .btn-color:nth-child(2) {
+  background: #2b2b2b;
+}
+.container .item-description .color .colors-container .btn-color:nth-child(3) {
+  background: #0f6450;
+}
+.container .item-description .color .colors-container .btn-color:hover {
+  border: 3px solid #5ece7b;
+}
+.container .item-description .color .colors-container .btn-color-active {
+  border: 3px solid #5ece7b;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.container .item-container .counter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 314px;
+}
+.container .item-container .counter-container .item-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .item-container .counter-container .item-counter .btn-default {
+  border: 1px solid #1d1f22;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+}
+.container .item-container .counter-container .item-counter .btn-default:hover {
+  background: #1d1f22;
+  color: #fff;
+  cursor: pointer;
+}
+.container .item-container .counter-container .cart-image {
+  position: relative;
+}
+.container .item-container .counter-container .cart-image > img {
+  max-width: 121px;
+  max-height: 190px;
+}
+.container .item-container .counter-container .cart-image .arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.73);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.container .item-container .counter-container .cart-image .arrow.arrow:nth-child(4) {
+  background-color: red;
+}
+.container .item-container .counter-container .cart-image .arrow:hover {
+  opacity: 0.8;
+}
+.container .item-container .counter-container .cart-image .arrow:nth-child(2) {
+  right: 40px;
+  bottom: 10px;
+}
+.container .item-container .counter-container .cart-image .arrow:nth-child(3) {
+  right: 10px;
+  bottom: 10px;
+}
+.container .order-container p {
+  width: 184px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1d1f22;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+.container .order-container p strong {
+  width: 80px;
+}
+.container .order-container .btn-order {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  width: 279px;
+  height: 43px;
+  background: #5ece7b;
+  flex: none;
+  border: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container .order-container .btn-order:hover {
+  opacity: 0.8;
+}

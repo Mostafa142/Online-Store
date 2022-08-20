@@ -1,0 +1,95 @@
+.card {
+  padding: 16px;
+  width: 386px;
+  height: 444px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(98%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card:hover .product {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.card:hover .cart-icon {
+  opacity: 1;
+}
+.card-disable {
+  opacity: 0.5;
+  padding: 16px;
+  width: 386px;
+  height: 444px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: initial;
+}
+.card-disable::after {
+  content: "Out Of Stock";
+  position: absolute;
+  top: 36%;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #8d8f9a;
+}
+
+.card-image .product-image > img {
+  max-width: 354px;
+  max-height: 330px;
+}
+
+.product-image {
+  position: relative;
+  width: 354px;
+  height: 330px;
+  text-align: center;
+}
+
+.cart-icon {
+  position: absolute;
+  bottom: -18px;
+  right: 20px;
+  background-color: #5ece7b;
+  color: #ffffff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+}
+.cart-icon:hover {
+  transform: scale(115%);
+}
+
+.card-description {
+  padding: 0 16px;
+  align-self: flex-start;
+}
+.card-heading {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1d1f22;
+  margin: 15px 0 10px 0;
+}
+.cost {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1d1f22;
+  margin: -10px 0 0 0;
+}

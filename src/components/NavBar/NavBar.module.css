@@ -1,0 +1,347 @@
+.btn-default {
+  width: 24px;
+  height: 24px;
+  border-radius: 0;
+  background-color: #eee;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d1f22;
+  outline-color: #1d1f22;
+  cursor: pointer;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  margin-right: 8px;
+}
+.btn-default:hover {
+  background-color: #1d1f22;
+  color: #eee;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.empty{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 80px;
+  background-color: #fff;
+  position: sticky;
+  z-index: 222;
+  top: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links:nth-child(1),
+.nav-links:nth-child(2) {
+  padding-right: 32px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.nav-links a:hover {
+  color: #57e583;
+}
+
+.active {
+  border-bottom: 2px solid #57e583;
+  color: #57e583 !important;
+}
+
+.logo {
+  /* margin-right: 50px; */
+  width: 10%;
+}
+
+.nav-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn-cart {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-cart span.counter {
+  position: absolute;
+  font-size: 10px;
+  bottom: 15px;
+  right: -6px;
+  color: white;
+  font-weight: 500;
+  background-color: black;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currency {
+  width: 100%;
+}
+li.currency:nth-child(1) {
+  background-color: #eee;
+}
+.currency.active {
+  background-color: #eee;
+}
+.btn-currency {
+  text-decoration: none;
+  position: relative;
+  margin-right: 25px;
+  color: black;
+  cursor: pointer;
+}
+.nav-categories > .btn-currency::after {
+  content: url(../../assets/direction.svg);
+  position: absolute;
+  left: 14px;
+  bottom: 2px;
+}
+
+.dropdown {
+  background-color: #ffffff;
+  position: absolute;
+  width: 114px;
+  top: calc(100% + 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 22222;
+}
+.dropdown-show {
+  display: none;
+}
+
+.dropdown a {
+  display: block;
+  padding: 15px;
+}
+
+.dropdown a:hover {
+  color: #57e583;
+}
+
+.miniCart-container {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  width: 300px;
+  padding: 32px 16px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 21;
+  transition: 0.3s;
+  height: 80vh;
+  overflow: scroll;
+}
+/* 
+.cart-icon:hover .miniCart-container {
+  opacity: 1;
+  transition: 0.3s;
+} */
+
+.total .items {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.total .items span.number {
+  font-weight: 500;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 293px;
+  height: 190px;
+  margin-bottom: 42px;
+}
+.cart-item .item-details {
+  width: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.cart-item .item-details .item-heading {
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  color: #1d1f22;
+  margin-bottom: 4px;
+}
+.cart-item .item-details .cost {
+  font-size: 16px;
+  color: #1d1f22;
+}
+.cart-item .item-details .size-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cart-item .item-details .size-container .btn-default {
+  width: 26px;
+  height: 26px;
+  border-radius: 0;
+  background-color: #eee;
+  font-weight: 700;
+  font-size: 9px;
+  color: #1d1f22;
+  outline-color: #1d1f22;
+  cursor: pointer;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  margin-right: 8px;
+}
+.cart-item .item-details .size-container .btn-default:hover {
+  background-color: #1d1f22;
+  color: #eee;
+}
+.cart-item .item-details .size-container .btn-default-active {
+  width: 26px;
+  height: 26px;
+  border-radius: 0;
+  background-color: #1d1f22;
+  font-weight: 700;
+  font-size: 8px;
+  color: #eee;
+  outline-color: #1d1f22;
+  cursor: pointer;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  margin-right: 8px;
+}
+
+.btn-default.active {
+  background-color: #1d1f22;
+  color: #eee;
+}
+
+.cart-item .item-details .colors-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cart-item .item-details .colors-container .btn-color {
+  width: 16px;
+  height: 16px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: #eee;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.cart-item .item-details .colors-container .btn-color-active {
+  width: 16px;
+  height: 16px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  margin-right: 8px;
+  cursor: pointer;
+  border: 3px solid #5ece7b;
+}
+.cart-item .item-details .colors-container .btn-color:hover {
+  border: 3px solid #5ece7b;
+}
+
+.miniCart-container .item-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 24px;
+  height: 190px;
+}
+
+.miniCart-container .item-counter .btn-default {
+  margin: 0;
+}
+
+.item-image > img {
+  max-width: 121px;
+  max-height: 190px;
+}
+
+.miniCart-container .check-out {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  width: 293px;
+}
+
+.miniCart-container .check-out h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.miniCart-container .check-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 293px;
+}
+
+.miniCart-container .check-btn-container .btn-default {
+  width: 140px;
+  height: 43px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  margin: 0;
+}
+.miniCart-container .check-btn-container .btn-default:nth-child(2) {
+  background-color: #fff;
+  color: #5ece7b;
+  border: 2px solid #5ece7b;
+}
+.miniCart-container .check-btn-container .btn-default:nth-child(2):hover {
+  background-color: #5ece7b;
+  border: 2px solid #5ece7b;
+  color: #fff;
+}

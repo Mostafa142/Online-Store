@@ -1,0 +1,184 @@
+.container {
+  padding: 80px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .mini-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 30px;
+}
+
+.container .mini-photos .mini-photo {
+  margin-bottom: 40px;
+  max-width: 100%;
+  max-width: 79px;
+  max-height: 80px;
+  cursor: pointer;
+}
+.container .mini-photos .mini-photo:hover {
+  opacity: 0.8;
+}
+.display-none {
+  display: none;
+}
+.container .large-photo {
+  margin-right: 30px;
+}
+.container .large-photo > img {
+  max-width: 610px;
+  max-height: 511px;
+}
+.container .item-description {
+  width: 292px;
+}
+.container .item-description .item-title {
+  margin-bottom: 43px;
+}
+.container .item-description .item-title .brand {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+  margin-bottom: 16px;
+}
+
+.container .item-description .item-title .type {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+}
+.container .item-description .size {
+  margin-bottom: 24px;
+}
+.item-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1d1f22;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.container .item-description .size .size-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container .item-description .size .size-container .btn-default {
+  border: 1px solid #1d1f22;
+  width: 63px;
+  height: 45px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d1f22;
+  background-color: #fff;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.container .item-description .size .size-container .btn-default:hover {
+  background: #1d1f22;
+  color: #fff;
+}
+.container .item-description .size .size-container .btn-default-active {
+  border: 1px solid #1d1f22;
+  width: 63px;
+  height: 45px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background: #1d1f22;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.container .item-description .color {
+  margin-bottom: 38px;
+}
+
+.container .item-description .color .colors-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .item-description .color .colors-container .btn-color {
+  width: 32px;
+  height: 32px;
+  background: #d3d2d5;
+  margin-right: 8px;
+  cursor: pointer;
+  border: none;
+}
+.container .item-description .color .colors-container .btn-color:nth-child(2) {
+  background: #2b2b2b;
+}
+.container .item-description .color .colors-container .btn-color:nth-child(3) {
+  background: #0f6450;
+}
+.container .item-description .color .colors-container .btn-color:hover {
+  border: 2px solid #5ece7b;
+}
+.container .item-description .color .colors-container .btn-color-active {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #5ece7b;
+}
+.container .item-description .price-container {
+  margin-bottom: 20px;
+}
+.container .item-description .price-container .price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d1f22;
+}
+
+.container .item-description .btn-cart-container .btn-add-to-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  width: 292px;
+  height: 52px;
+  background: #5ece7b;
+  margin-bottom: 40px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.container .item-description .btn-cart-container .btn-add-to-cart:hover {
+  opacity: 0.8;
+}
+.container .item-description .btn-cart-container p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159.96%;
+  color: #1d1f22;
+}
